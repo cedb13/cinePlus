@@ -1,0 +1,840 @@
+
+/***************************************************************************************************/
+/*      --------------------------------Map du style css -------------------------------------     */
+/* INTRODUCTION :                                                                                  */
+/* Root : Couleurs, Polices, Ombres                                                                */
+/* CHARTE GRAPHIQUE : Police speciale, Couleurs de FONDS, Couleurs de POLICES                      */
+/*                   -------------------------------------------------------------                 */
+/* 1 - STYLES GENERAUX :                                                                           */
+/* Apparence globale et styles par défaut des éléments                                             */
+/* CORPS : Police, taille, etc.                                                                    */
+/* POLICES : Police principale,  Police customisée                                                 */
+/* Styles d'EN-TETES                                                                               */
+/* TEXTE                                                                                           */
+/* LIENS                                                                                           */
+/* LISTES                                                                                          */
+/* Navigation                                                                                      */
+/* Header                                                                                          */
+/* footer                                                                                          */
+/* Boite "virtuelle"                                                                               */
+/* Les IMAGES                                                                                      */
+/* ------------------------------------                                                            */
+/* 2 - CONTENU :                                                                                   */
+/* --CONTENU--                                                                                     */
+/* --centrer--                                                                                     */
+/* --le texte dans caption : banner-caption--                                                      */
+/* --Carousel--                                                                                    */
+/* --le texte dans caption : carousel-caption--                                                    */
+/* --section en-avant--                                                                            */
+/* --section3--                                                                                    */
+/* --Inscription et Contact--                                                                      */
+/* --Icons--                                                                                       */
+/* --------------------------------                                                                */
+/* 3 - CLASSES USUELLES :                                                                          */
+/*     Classes réutilisables                                                                       */
+/* Visibilité : dsp-none                                                                           */
+/* CENTRER : conteneur                                                                             */
+/* BOUTONS                                                                                         */
+/* couleur bouton                                                                                  */
+/* ESPACEMENT : exterieur, interieur                                                               */
+/* --------------------------------                                                                */
+/* 4 - BOOTSTRAP                                                                                   */
+/* Les liens de la NAVBAR                                                                          */
+/* Bordure autour du bouton MENU MOBILE                                                            */
+/* --------------------------------                                                                */
+/* 5 - MEDIA QUERIES                                                                               */
+/* Extra small devices (portrait phones, less than 576px)                                          */
+/* SMALL PAYSAGE devices (landscape phones, 576px and up)                                          */
+/* MEDIUM devices (tablets, 768px and up)                                                          */
+/* LARGE devices (desktops, 992px and up)                                                          */
+/* XLARGE devices (large desktops, 1200px and up)                                                  */
+/*                  --------------------------------------------------------------                 */
+
+:root {
+    
+    /* COULEURS */
+    --color-1: #000; /* Noir */
+    --color-2: #333333; /* Gris Foncé */
+    --color-3: #999999; /* Gris Blanc */
+    --color-4: #fff; /* Blanc */
+    --color-5: #FFE491; /* jaune pastel */
+    --color-6: #D2ECB7; /* Vert pastel */
+    
+    /* POLICES */
+    --main-font: 'Open Sans', sans-serif; /* Google Font */
+    --custom-font: 'Roboto', sans-serif; /* Google Font */
+    
+    /* OMBRES */
+    --light-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* cf .shadow Bootstrap */
+    --xlight-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    --color-shadow: 0 0.5rem 1rem rgba(201, 224, 0, 0.45); /* sur la base de --color-5 */
+
+}
+
+/* CHARTE GRAPHIQUE */
+
+/* -> Police speciale */
+
+@font-face
+{
+    font-family: 'Mansalva';
+    src: url('font/MansalvaRegular.ttf');
+}
+
+
+/* -> Couleurs de FONDS */
+
+.color-1 {
+    background-color: var(--color-1); 
+}
+
+.color-2 {
+    background-color: var(--color-2); 
+}
+
+.color-3 {
+    background-color: var(--color-3); 
+}
+
+.color-4 {
+    background-color: var(--color-4); 
+}
+
+.color-5 {
+    background-color: var(--color-5); 
+}
+
+.color-6 {
+    background-color: var(--color-6); 
+}
+
+
+
+/* -> Couleurs de POLICES */
+
+.txt-color-1 {
+    color: var(--color-1); 
+}
+
+.txt-color-2 {
+    color: var(--color-2); 
+}
+
+.txt-color-3 {
+    color: var(--color-3);
+}
+
+.txt-color-4 {
+    color: var(--color-4);  /* blanc */
+}
+
+
+.txt-color-5 {
+    color: var(--color-5); 
+}
+
+.txt-color-6 {
+    color: var(--color-6); 
+}
+
+
+
+
+/* -------------------------------------------------------------
+    1 - STYLES GENERAUX :
+        Apparence globale et styles par défaut des éléments 
+
+---------------------------------------------------------------- */
+
+/* CORPS : Police, taille, etc. */
+body {
+    font-family: var(--main-font); /* Open sans */
+    font-size: 16px;
+}
+
+/* POLICES */
+
+/* Police principale */
+.main-font {
+    font-family: var(--main-font); /* Open sans */
+}
+
+/* Police customisée */
+.custom-font {
+    font-family: var(--custom-font); /* Roboto */
+}
+    
+
+/* Styles d'EN-TETES */
+
+h1,
+h2,
+.h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--custom-font); /* Roboto */
+    padding-bottom: .5rem;
+}
+
+h1 {
+    /* font-size: 2.5rem; */
+    font-weight: 700;
+}
+
+
+/* TEXTE */
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* LIENS */
+
+header a {
+    color: var(--color-1); /*black */
+    text-decoration: underline; /* surécrire Bootstrap */
+}
+
+footer a {
+    color: var(--color-4); /*white */
+    text-decoration: underline; /* surécrire Bootstrap */
+}
+
+a .icon-res {
+    color: var(--color-2);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a .icon-res:hover {
+    color: var(--color-5); /* jaune pastel */
+}
+
+a:hover {
+    color: var(--color-5); /* jaune pastel */
+}
+
+a::active {
+    color: var(--color-6); /* vert pastel */
+}
+
+/* LISTES */ 
+
+ul,
+ol,
+li {
+    list-style-type: none; /* enlever les puces */
+}
+
+
+/******* Navigation ********/
+
+
+section {
+  margin-top: 10px;
+}
+
+nav > ul > li {
+  align-self: center;
+}
+
+nav {
+  display: block;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  box-shadow: 5px 5px 15px black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  width:  99%;
+  position: relative;
+  align-items: center;
+}
+
+/*Header*/
+
+.navh {
+  background-color: var(--color-4);
+  z-index: 1030;
+  width: 99%;
+}
+
+header {
+  width: 99%;
+}
+
+/*header .navh {
+  position: fixed;
+}*/
+
+
+#logo {
+  position: relative;
+  display: block;
+  font-size: 4vmin;
+
+  background-position: center center;
+  width: 130px;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+    
+  z-index: 1;
+  background-image: url("logos/logo-festival-films_plein_air.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+/* FOOTER */
+
+.navf {
+  background-color: var(--color-1);
+}
+
+footer {
+  width: 99%;
+  position: relative;
+  margin-top: 0;
+}
+
+
+#logofooter {
+  position: relative;
+  display: block;
+  font-size: 4vmin;
+
+  background-position: center center;
+  width: 130px;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  background-size: 50%;
+    
+  z-index: 1;
+  background-image: url("logos/logo-festival-blanc.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+#logoparis {
+ 
+ position: relative;
+  display: block;
+  font-size: 4vmin;
+
+  background-position: center center;
+  width: 110px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  background-size: 50%;
+    
+  z-index: 1;
+  background-image: url("logos/logo-paris.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+#logoregion {
+ 
+ position: relative;
+  display: block;
+  font-size: 4vmin;
+
+  background-position: center center;
+  width: 130px;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  background-size: 50%;
+    
+  z-index: 1;
+  background-image: url("logos/logo-idf.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+#res-fa {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#res-tw {
+  margin-right: 40px;
+}
+
+.col-form-label {
+  padding-top: 0;
+}
+
+/* Boite "virtuelle" */
+.v-box {
+    min-height: 25vh;
+}
+
+/* Les IMAGES */
+
+img {  
+    display: block; /* boite redimensionnable... */
+    width: 100%; /* Toute la largeur de son parent par défaut */
+    height: auto; /* Préserver le ratio de l'image */
+}
+.aff-festi {
+    display: block; /* boite redimensionnable... */
+    width: 100%; /* Toute la largeur de son parent par défaut */
+    height: auto; /* Préserver le ratio de l'image */
+}
+.img-text {
+  position: relative;
+  background-position: center center;
+  float: none;
+}
+
+/* --------------------------------
+    2 - CONTENU :
+        
+---------------------------------- */
+/* CONTENU */
+
+section.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#bandeau {
+  border-top: 20px solid black;
+  border-bottom: 20px solid black;
+}
+
+section .banner-caption {
+  padding: 4rem;
+  bottom: 0;
+  mix-blend-mode: hard-light;  /*mode fusion de "calques" */ 
+
+  /*--centrer--*/
+  display: block;
+  flex-direction: column;
+  justfy-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  width: 70%;
+}
+
+/* le texte dans caption */
+.banner-caption h3 {
+  font-size: 8vmin;
+  font-family: 'Mansalva', cursive;
+}
+.banner-caption p {
+  font-size: 4vmin;
+  font-family: 'Mansalva', cursive;
+}
+#bio  {
+    display: flex; /* naturellement les bloc s'aligne les uns en dessous des autres, avec flex ils s'alignes par défaut verticalement */
+    /*flex-direction: column;*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.bio1 {
+}
+/*-- Carousel --*/
+.carousel-caption{
+  padding: 4rem;
+  bottom: 0;
+  width: 100%;
+  left:0; 
+  mix-blend-mode: hard-light;  /*mode fusion de "calques" */ 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,2bd2d8+100&0+0,0.72+99 */
+  background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(44,210,216,0.72) 99%, rgba(43,210,216,0.72) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(44,210,216,0.72) 99%,rgba(43,210,216,0.72) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(44,210,216,0.72) 99%,rgba(43,210,216,0.72) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#b82bd2d8',GradientType=0 ); /* IE6-9 */
+
+  /*--centrer--*/
+  display: flex;
+  flex-direction: column;
+  justfy-content: center;
+  align-items: center;
+}
+
+/* le texte dans caption */
+.carousel-caption h3 {
+  font-size: 8vmin;
+  font-family: 'Mansalva', cursive;
+}
+bout-carouss, .carousel-control-next, .carousel-control-prev {
+  z-index: 1030;
+}
+/* Filtres sur les images */
+/* .carousel-item img{
+   filter : grayscale(120%) contrast(150%);
+} */
+
+/* section en-avant */
+#en-avant img {
+  display: inline-block;
+  width:50%; /*recupère la largeur intrasecte */
+}
+#en-avant{
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+#en-avant article {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem; /* padding: 0 (top) 1rem(left) 4rem(bottom) 1rem(left) que l'on écrit padding: 0 1rem 4rem 1rem ou encore 
+              padding= 0 1rem (car interprété comme left et right si on en met qu'un) 4rem */
+}
+#en-avant p {
+  text-overflow: ellipsis;
+}
+.container-txt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+/* section 3 */ 
+#section3 article:nth-of-type(even){  /* even pour les articles pair odd pour les articles impair */
+  flex-direction: row-reverse;
+}
+#section3 h3{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#section3 p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#section3 img{
+  /*display: inline-block;
+  width:auto;*/
+}
+
+/* Inscription et Contact */
+#inscription {
+  width: 600px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.ins-box {
+  margin-right: 300px;
+}
+/* Icons */
+.icon-location {
+  background-image: url("material-icons/location.svg");
+  margin-right: 5px;
+}
+.icon-metro {
+  background-image: url("material-icons/metro.svg");
+  margin-right: 5px;
+}
+.icon-velib {
+  background-image: url("material-icons/velib.svg");
+  margin-right: 5px;
+}
+.icons {
+  display: inline-block;
+  width: 24px; /* taille par défaut = Medium */
+  height: 24px;
+  max-width: 100%;
+  /* background: transparent url("material-icons/edit.svg") center center no-repeat; */
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#form-festi {
+  width: 600px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* --------------------------------
+    3 - CLASSES USUELLES :
+        Classes réutilisables
+---------------------------------- */
+/* Visibilité */
+.dsp-none{
+  display: none;
+}
+/* CENTRER */
+
+.conteneur {  
+    max-width: 1366px; /* Réduire la taille d'un élément */
+    margin-left: auto; /* le centrer dans son parent */
+    margin-right: auto;
+}
+
+/* BOUTONS */
+.round-btn{
+  border-radius: 3rem;
+  padding: .5rem 1.75rem;
+}
+.btn{
+  /* couleur bouton */
+background-color: var(--color-2);
+color: var(--color-5);
+}
+.btn:hover {
+background-color: var(--color-6);
+color: var(--color-2);
+}
+
+/* ESPACEMENT */
+  /* exterieur */
+.spacer{
+  margin: 1rem;
+}
+.spacer-2x{
+  margin: 2rem;
+}
+.spacer-left{
+  margin-left: 1rem;
+}
+  /* Interieur */
+.padded{
+  padding: 1rem;
+}
+.padded-2x{
+  padding: 2rem;
+}
+.padded-left{
+  padding-left: 1rem;
+}
+
+/* --------------------------------
+    4 - BOOTSTRAP
+---------------------------------- */
+
+/* Les liens de la NAVBAR */
+.navbar a {
+    text-decoration: none;
+}
+
+/* Bordure autour du bouton MENU MOBILE */
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: 0 none;
+    outline: 0;
+}
+
+/* --------------------------------
+    5 - MEDIA QUERIES
+---------------------------------- */
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px) {
+    
+  .conteneur {  /* cf .container Bootstrap */
+        width: 300px; 
+  }
+  #en-avant{
+    width: 60%;
+  }
+  .nav-mob {
+    left: -25%; /* à gauche par défaut (hors de l'écran) */
+    width: 25%; /* largeur volet */
+    margin-right: 150px;
+  }
+  #form-festi {
+    margin-left: 20px;
+  }
+  #inscription{
+    margin-left: 20px;
+  }
+  .mb-3 {
+    margin-right: 300px;
+  }
+  #bio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* SMALL PAYSAGE devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+    .conteneur {  /* cf .container Bootstrap */
+        width: 540px; 
+    }
+   #en-avant{
+    width: 80%;
+  }
+  .nav-mob {
+    left: -25%; /* à gauche par défaut (hors de l'écran) */
+    width: 25%; /* largeur volet */
+    margin-right: 150px;
+  }
+  #form-festi {
+    margin-left: 20px;
+  }
+  #inscription{
+    margin-left: 20px;
+  }
+  .mb-3 {
+    margin-right: 150px;
+  }
+  #bio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+/* MEDIUM devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+  
+    .conteneur {  
+        width: 720px; 
+    }
+    #en-avant{
+    width: 80%;
+    }
+    .nav-mob {
+      left: -25%; /* à gauche par défaut (hors de l'écran) */
+      width: 25%; /* largeur volet */
+      margin-right: 150px;
+    }
+    #form-festi {
+    margin: auto;
+    }
+    #inscription{
+    margin: auto;
+    }
+    .ins-box {
+    margin-right: 50px;
+    }
+    .mb-3 {
+    margin-right: 50px;
+    }
+    #bio {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .bio1 {
+    vertical-align: top;
+   margin-bottom: 120px;
+    }
+    .color-test {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    }
+    /* GRILLES */
+    .grid-4-8-12 {
+        grid-template-columns: repeat(8, 1fr); /* =  (8 colonnes) */
+    }
+
+}
+
+/* LARGE devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .conteneur {  
+        width: 960px; 
+    }
+
+    nav {
+      display: block;
+      z-index: 10;
+      width: 100%;
+      height: 7em;
+      margin-top: 10px;
+      padding-bottom: 5px;
+      margin-left: 5px;
+      box-shadow: 5px 5px 15px black;
+    }
+    .nav-mob {
+      left: 5px; 
+      width: 100%;
+      margin-right: 5px;
+    }
+    #form-festi {
+    margin: auto;
+    }
+    #inscription{
+    margin: auto;
+    }
+    .ins-box {
+    margin-right: 50px;
+    }
+    .mb-3 {
+    margin-right: 50px;
+    }
+    .bio1 {
+    vertical-align: top;
+   margin-bottom: 120px;
+    }
+    .color-test {
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    }
+    /* GRILLES */
+    .grid-4-8-12 {
+        grid-template-columns: repeat(12, 1fr); /* =  (12 colonnes par défaut) */
+    }
+}
+
+/* XLARGE devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    .conteneur {  
+        width: 1140px;         
+    }
+    nav {
+      display: block;
+      z-index: 10;
+      width: 100%;
+      height: 7em;
+      margin-top: 10px;
+      padding-bottom: 5px;
+      margin-left: 5px;
+      box-shadow: 5px 5px 15px black;
+    }
+    .nav-mob {
+      left: 5px; 
+      width: 100%;
+      margin-right: 5px;
+    }
+    #form-festi {
+    margin: auto;
+    }
+    #inscription{
+    margin: auto;
+    }
+    .ins-box {
+    margin-right: 50px;
+    }
+    .mb-3 {
+    margin-right: 50px;
+    }
+    .bio1 {
+    vertical-align: top;
+    margin-bottom: 160px;
+    }
+    .color-test {
+        grid-template-columns: repeat(6, 1fr); /* 6 colonnes */
+    }
+}

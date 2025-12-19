@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <title>Festival-films-de-plein-air</title>  
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="description" content="Accueil du festival des films de plein air 2022">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     
+        <!-- Police Google : Titillium -->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900&display=swap" rel="stylesheet">
+
+        <!-- Police Google : Open sans -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+
+         <!-- Police Google : Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap" rel="stylesheet">
+
+      
+        <!-- Font Awesome (Icones) --> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://kit.fontawesome.com/7b8494630f.js" crossorigin="anonymous"></script>
+      
+      
+        <!-- Sal.js -->
+        <link rel="stylesheet" href="css/sal.css">
+            
+        <!-- MES STYLES (la dernière dans la cascade) -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="css/logos/favicon.png">
+        <body>
+        
+            <!-- HEADER : la navbar -->
+            <header class="navh navbar navbar-expand-lg navbar-light bg-light">
+                <!--logo -->
+                <a class="nav-link" href="index.html"><span id="logo"></span></a>
+                <!-- Bouton d'OUVERTURE DU MENU MOBILE -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENU -->
+                <nav class="collapse navbar-collapse nav-h2 nav-mob" id="navbarSupportedContent">
+
+                     <!-- Liste des liens et pages -->
+                    <ul class="navbar-nav mr-auto">
+
+                      <!-- Page d'ACCUEIL -->   
+                      <li class="nav-item active"><a class="nav-link active" aria-current="page" href="index.html">Festival 2022<span class="sr-only">(current)</span></a></li>
+                      <!-- Lien : page  Nos Films -->
+                      <li class="nav-item"><a class="nav-link" href="nos-films.html">Nos films</a></li>
+                      <!-- Lien : page  L'Actualité du Festival -->
+                      <li class="nav-item"><a class="nav-link" href="actualite-festival.html">L'actualité du festival</a></li>
+                      <!-- Lien : page  Inscription -->
+                      <li class="nav-item"><a class="nav-link" href="inscription.html">Inscription</a></li>
+                      <!-- Lien : page  CONTACT -->
+                      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+
+             <!-- Contenu PRINCIPAL -->
+            <main class="h100">
+
+            <!-- section caroussel -->
+                <section>
+                    <h2 class="dsp-none">Le Caroussel</h2>
+                <!-- conteneur du caroussel -->
+                    <div class="bd-example">
+                    <!-- indicateurs de position" -->
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                            </ol>
+                        <!-- conteneur "interieur": les slides -->
+                        <div class="carousel-inner">
+                        <!-- slide 1 -->
+                            <article class="carousel-item active">
+                            <!-- Image Adaptative -->
+                                <picture>
+                                    <source srcset="img/carousel-image-1_640.jpg" media="(max-width: 767px)">
+                                    <!-- Image par defaut -->
+                                        <img src="img/carousel-image-1_large.jpg" class="d-block w-100" alt="...">
+                                </picture>
+                                <!-- caption -->
+                                    <header class="carousel-caption" >
+                                        <h3 class="animated lightSpeedIn">titre de film</h3>
+                                            <p class="animated lightSpeedIn">Nutella la vie des elites libero, la pharmacie n'a aucune mollie interne.</p>
+                                    </header>
+                            </article>
+                            <!-- slide 2 -->
+                            <article class="carousel-item">
+                            <!-- Image Adaptative -->
+                                <picture>
+                                    <source srcset="img/carousel-image-2_640.jpg" media="(max-width: 767px)">
+                                    <!-- Image par defaut -->
+                                        <img src="img/carousel-image-2_large.jpg" class="d-block w-100" alt="...">
+                                </picture>
+                                <!-- caption -->
+                                    <header class="carousel-caption d-md-block">
+                                        <h3 class="animated lightSpeedIn">Titre de film aussi</h3>
+                                            <p class="animated lightSpeedIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </header>
+                            </article>
+                            <!-- slide 3 -->
+                            <article class="carousel-item">
+                            <!-- Image Adaptative -->
+                                <picture>
+                                    <source srcset="img/carousel-image-3_640.jpg" media="(max-width: 767px)">
+                                    <!-- Image par defaut -->
+                                        <img src="img/carousel-image-3_large.jpg" class="d-block w-100" alt="...">
+                                </picture>
+                                <!-- caption -->
+                                    <header class="carousel-caption d-md-block">
+                                        <h3 class="animated lightSpeedIn">Titre de film encore</h3>
+                                            <p class="animated lightSpeedIn">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </header>
+                            </article>
+                            <!-- slide 4 -->
+                            <article class="carousel-item">
+                            <!-- Image Adaptative -->
+                                <picture>
+                                    <source srcset="img/carousel-image-2_640.jpg" media="(max-width: 767px)">
+                                    <!-- Image par defaut -->
+                                        <img src="img/carousel-image-2_large.jpg" class="d-block w-100" alt="...">
+                                </picture>
+                                <!-- caption -->
+                                    <header class="carousel-caption d-md-block">
+                                        <h3 class="animated lightSpeedIn">Re titre de film</h3>
+                                            <p class="animated lightSpeedIn">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </header>
+                            </article>
+                        </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+                </section>
+                
+                <section>
+                    <!-- Une div pour positionner !? -->
+                    <div class="content-position flex-grid conteneur-xl inner-bottom-space-6x" id="bio">
+
+                        <!-- Section "Bio" -->
+                        <div class="padded-2x col-md-6">
+                            <!-- Titre -->
+                            <h2>Inscrivez-vous!</h2>
+                            <p>Nunc ultrices pharetra ante ut cursus. Vivamus eget lorem in turpis laoreet mollis. Quisque aliquet, libero vel sodales auctor, magna lacus vehicula ex, in pellentesque mi purus vel dolor. Mauris ultrices interdum euismod.</p>
+                        </div>
+                    </div>
+                    <hr class="conteneur">
+                </section>
+
+            <!-- section Formulaire -->
+                <FORM METHOD=POST ACTION="mailto:contact@filmspleinair.org" id="inscription">
+                    <div class="form-floating mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Votre Nom</label>
+                      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                    </div>
+                    <div class="form-floating mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Votre adresse Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mon_mail@exemple.com">
+                    </div>
+                    <label class="input-group-text form-label mb-3" for="exampleFormControlInput1"><strong>Choisisser vos films</strong></label>
+                    <hr class="ins-box">
+                    <label class="form-label mb-3" for="exampleFormControlInput1"><strong>Le 5/08/2022</strong></label>
+                    <div class="input-group mb-3">
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Film 1</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect01">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Film 2</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect02">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                    </div>
+                    <hr class="ins-box">
+                    <label class="form-label mb-3" for="exampleFormControlInput1"><strong>Le 6/08/2022</strong></label>
+                    <div class="input-group mb-3">
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox1">Film 3</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect03">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect03">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                          <label class="form-check-label" for="inlineCheckbox4">Film 4</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect04">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect04">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                    </div>
+                    <hr class="ins-box">
+                    <label class="form-label mb-3" for="exampleFormControlInput1"><strong>Le 7/08/2022</strong></label>
+                    <div class="input-group mb-3">
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                          <label class="form-check-label" for="inlineCheckbox5">Film 5</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect05">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect05">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                          <label class="form-check-label" for="inlineCheckbox6">Film 6</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect06">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect06">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                    </div>
+                    <hr class="ins-box">
+                    <label class="form-label mb-3" for="exampleFormControlInput1"><strong>Le 8/08/2022</strong></label>
+                    <div class="input-group mb-3">
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                          <label class="form-check-label" for="inlineCheckbox7">Film 7</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect07">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect07">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                        <div class="form-check form-check-inline mb-3">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                          <label class="form-check-label" for="inlineCheckbox8">Film 8</label>
+                        </div>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect08">Nombre de personnes</label>
+                              <select class="form-select" id="inputGroupSelect08">
+                                <option selected>Choisir...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </div>
+                        </div>
+                        <hr class="ins-box">
+                    <div class="mb-3">
+                     <input type="submit" class="btn btn-primary btn-check" id="btn-check-2" value="Envoyer">
+                    </div>
+                </FORM>
+                <br>
+            </main>
+
+            <!-- FOOTER -->
+            <footer>
+              <nav class="navf navbar navbar-expand-lg navbar-dark">
+                <a class="nav-link" href="index.html"><span id="logofooter"></span></a>
+                <div class="resos-sociaux" id="res-fa">
+                    <!-- Facebook -->                               <!-- Icône "Font Awesome" -->
+                    <a href="#" title="Voir la page facebook"><i class="fab fa-facebook"></i><span class="dsp-none">Facebook</span></a>
+                </div>
+                <div class="resos-sociaux" id="res-tw">
+                    <!-- Twitter -->                             <!-- Icône "Font Awesome" -->
+                    <a href="#" title="Voir la page Twitter"><i class="fab fa-twitter"></i><span class="dsp-none">Twitter</span></a>
+                </div>
+                 
+                <div class="navbar-collapse">
+                <!--Menu--->
+                    <ul class=" navbar-nav navlink mr-auto">
+                      <li class="nav-item"><a class="nav-link" href="nos-films.html">Nos films</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                      <li class="nav-item"><a class="nav-link" href="politiques-confidentialite.html">Politiques et confidentialité</a></li>
+                      <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.paris.fr/equipements/parc-monceau-1804"><span id="logoregion"></span></a></li>
+                      <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.paris.fr/equipements/parc-monceau-1804"><span id="logoparis"></span></a></li>
+                    </ul>
+                </div>
+              </nav>
+            </footer>
+
+             <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- Mes SCRIPTS -->
+        
+        <!-- Sal.js -->
+        <script src="js/sal.js"></script>
+        
+        <script>
+            // Initier le script
+            
+            sal({
+                once: false
+            });
+
+        </script>
+  </body>
+</html>
